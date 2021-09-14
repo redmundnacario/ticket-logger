@@ -1,15 +1,24 @@
 // import logo from './logo.svg';
 import './App.css'
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import Button from './components/Common/Button/Button.component'
+import Navbar from './components/Layout/Navbar/Navbar.component';
 
-import Button from './components/Button/Button.component'
+import Logs from './components/Logs/Logs.component';
 
 function App() {
   return (
-    <div className="App" >
-      <div class="w-screen h-screen flex items-center justify-center bg-gray-100">
-        <Button className = {"primary-btn"} text={"Open Modal"}/>
+    <Router>
+      <div className="App" >
+        <Navbar/>
+        <div className="w-screen h-screen flex justify-center bg-gray-100 pt-10">
+          <Logs/>
+          {
+            // <Button className = {"primary-btn"} text={"Open Modal"}/>
+          }
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 
