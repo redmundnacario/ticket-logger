@@ -1,32 +1,31 @@
-.buttonVariable{
-    @apply text-center px-4 py-3 rounded my-1 py-2 m-2 transition duration-500 focus:outline-none
+.buttonVariable {
+    @apply text-center px-4 py-3 rounded my-1 py-2 m-2 transition duration-500 focus:outline-none;
 }
 
-.primary-btn{
-    @apply buttonVariable;
+.primary-btn {
     @apply bg-blue-500 text-white hover:bg-blue-600;
 }
-.success-btn { 
-    @apply buttonVariable;
+.success-btn {
     @apply bg-green-500 text-white hover:bg-green-600;
 }
-.danger-btn { 
-    @apply buttonVariable;
+.danger-btn {
     @apply bg-yellow-500 text-white hover:bg-yellow-600;
 }
-.warning-btn { 
-    @apply buttonVariable;
+.warning-btn {
     @apply bg-red-500 text-white hover:bg-red-600;
 }
-.info-btn { 
-    @apply buttonVariable;
+.info-btn {
     @apply bg-blue-200 text-white hover:bg-blue-300;
 }
-.dark-btn { 
-    @apply buttonVariable;
+.dark-btn {
     @apply bg-gray-700 text-white hover:bg-gray-800;
 }
-.light-btn { 
-    @apply buttonVariable;
+.light-btn {
     @apply bg-gray-200 text-gray-700 hover:bg-gray-300;
+}
+
+/* Floating button */
+
+.buttonVariable {
+    @apply rounded-full h-20 w-20 text-lg flex items-center justify-center transition duration-500 focus:outline-none;
 }
